@@ -24,13 +24,12 @@ const countLetters = function(sentence) {
       outputObject[letter] = 1;
     }
   }
-  console.log("outputObj: ", outputObject);
+  // console.log("outputObj: ", outputObject);
   return outputObject;
   //returns object w/ count of each letter in the string. only include letters used in string
 };
 
-// const result2 = countLetters("lighthouse in the house");
-
+assertEqual(countLetters("lighthouse in the house"), { l: 1, i: 2, g: 1, h: 4, t: 2, o: 2, u: 2, s: 2, e: 3, n: 1 }); 
 assertEqual(countLetters("hello there"), { h: 2, e: 3, l: 2, o: 1, t: 1, r: 1 });
 assertEqual(countLetters("what is going on"), { w: 1, h: 1, a: 1, t: 1, i: 2, s: 1, g: 2, o: 2, n: 2 });
 assertEqual(countLetters("i am learning to code"), {
