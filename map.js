@@ -1,4 +1,4 @@
-const assertArraysEqual = function (arr1, arr2) {
+const assertArraysEqual = function(arr1, arr2) {
   let answer = eqArrays(arr1, arr2);
 
   if (answer === true) {
@@ -9,7 +9,7 @@ const assertArraysEqual = function (arr1, arr2) {
   }
 };
 
-const eqArrays = function (arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
   }
@@ -23,7 +23,6 @@ const eqArrays = function (arr1, arr2) {
 };
 
 //////////
-
 
 const words = ["ground", "control", "to", "major", "tom"];
 // const counties = ["Mayo", "Galway", "Dublin", "Meath", "Limerick"];
@@ -41,8 +40,7 @@ const map = (array, callback) => {
 const results1 = map(words, (word) => word[0]);
 // console.log(results1);
 
-
-assertArraysEqual(results1, [ 'g', 'c', 't', 'm', 't' ]);
+assertArraysEqual(results1, ["g", "c", "t", "m", "t"]);
 // assertArraysEqual(results1, [ 'M', 'G', 'D', 'M', 'L' ]);
 // assertArraysEqual(results1, [ 'w', 'f', 'b', 'j' ]);
 // assertArraysEqual(results1, [ 'p', 'c', 'c' ]);
