@@ -22,9 +22,9 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 
-//////////
+//////////TEST & FUNC
 
-const words = ["ground", "control", "to", "major", "tom"];
+// const words = ["ground", "control", "to", "major", "tom"];
 // const counties = ["Mayo", "Galway", "Dublin", "Meath", "Limerick"];
 // const drinks = ["water", "fizzy", "beer", "juice"]
 // const snacks = ["popcorn", "chocolate", "crisps"]
@@ -37,10 +37,11 @@ const map = (array, callback) => {
   return results;
 };
 
-const results1 = map(words, (word) => word[0]);
-// console.log(results1);
+// const results1 = map(snacks, (snacks) => snacks[0]);
 
-assertArraysEqual(results1, ["g", "c", "t", "m", "t"]);
+// assertArraysEqual(results1, ["g", "c", "t", "m", "t"]);
 // assertArraysEqual(results1, [ 'M', 'G', 'D', 'M', 'L' ]);
 // assertArraysEqual(results1, [ 'w', 'f', 'b', 'j' ]);
 // assertArraysEqual(results1, [ 'p', 'c', 'c' ]);
+
+module.exports = map;
