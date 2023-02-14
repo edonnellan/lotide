@@ -12,7 +12,7 @@ const middle = function(array) {
     outputArray.push(array[odd]);
   };
 
-  if (array.length % 2 === 0) { // even number of element in array
+  if (array.length % 2 === 0) { // even number of elements in array
     even = (array.length / 2) - 1;
     outputArray.push(array[even], array[even + 1]);
   };
