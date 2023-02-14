@@ -8,7 +8,6 @@ const assertEqual = function(actual,expected) {
 
 };
 
-
 const findKey = (obj, callback) => {
   for (let key in obj) {
     if (callback(obj[key]) === true) {
@@ -19,20 +18,19 @@ const findKey = (obj, callback) => {
 };
 
 
-const movies = {
-  romCom: "Easy A",
-  comedy: "Pineapple Express",
-  drama: "All Quiet on the Western Front",
-  thriller: "Gone Girl"
-};
+// //TEST CODE
+// const movies = {
+//   romCom: "Easy A",
+//   comedy: "Pineapple Express",
+//   drama: "All Quiet on the Western Front",
+//   thriller: "Gone Girl"
+// };
 
 // const watchARomCom = findKey(movies, x => x === "Easy A");
 // const watchAComedy = findKey(movies, x => x === "Pineapple Express");
 // const watchADrama = findKey(movies, x => x === "All Quiet on the Western Front");
 // const watchAThriller = findKey(movies, x => x === "Gone Girl");
 
-
-// //TEST CODE
 // assertEqual(watchARomCom, "romCom");
 // assertEqual(watchAComedy, "comedy");
 // assertEqual(watchADrama, "drama");
