@@ -1,31 +1,10 @@
-/*
-const assertEqual = function(actual,expected) {
+const tail = function(arr) {
 
-  if (actual === expected) {
-    console.log(`💚💚💚 Assertion Passed: ${actual}  === ${expected}`);
-  } else {
-    console.log(`💔💔💔 Assertion Failed: ${actual} !== ${expected}`);
+  for (let i = 0; i < arr.length; i++) {
+    if(i === arr.length - 1){
+      return arr[i];
+    }
   }
 };
 
-
-//TEST CODE
-console.log(assertEqual("Lighthouse Labs", "Bootcamp"));
-console.log(assertEqual("hello", "hello"));
-console.log(assertEqual("Mother", "Father"));
-console.log(assertEqual(23, 40));
-console.log(assertEqual(1, 1));
-*/
-const tail = function(arr) {
-  let newArray = [];
-
-  for (let i = 1; i < arr.length; i++) {
-    newArray.push(arr[i]);
-  } console.log("newArray", newArray);
-  return newArray;
-};
-
-console.log(tail(["Hello", "Lighthouse Labs", "Bootcamp"]));
-console.log(tail([70, 100, 56, 44]));
-console.log(tail([44]));
-console.log(tail([]));
+module.exports = tail;
